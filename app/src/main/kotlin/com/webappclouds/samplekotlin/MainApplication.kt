@@ -1,11 +1,11 @@
-package kot;
+package com.webappclouds.samplekotlin
 
 import android.app.Application;
 import android.content.Context
 
-import kot.injection.AppComponent;
-import kot.injection.AppModule
-import kot.injection.DaggerAppComponent
+import kt.injection.AppComponent;
+import kt.injection.AppModule
+import kt.injection.DaggerAppComponent
 
 /**
  * Created by user on 2/2/2017.

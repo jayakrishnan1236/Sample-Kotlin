@@ -1,4 +1,4 @@
-package kot.injection
+package kt.injection
 
 import android.app.Application
 import android.content.Context
@@ -8,7 +8,7 @@ import com.squareup.picasso.Picasso
 import com.webappclouds.samplekotlin.BuildConfig
 import dagger.Module
 import dagger.Provides
-import kot.utils.PreferencesHelper
+import kt.utils.PreferencesHelper
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -1,14 +1,14 @@
-package kot
+package com.webappclouds.samplekotlin
 
 import android.util.Log
 import com.google.gson.JsonObject
-import kot.constants.LINK
-import kot.constants.LOCATION_KEY
-import kot.injection.RestService
-import kot.mvp.BasePresenter
-import kot.utils.PreferencesHelper
-import kot.utils.io
-import kot.utils.unsubsribe
+import kt.constants.LINK
+import kt.constants.LOCATION_KEY
+import kt.injection.RestService
+import kt.mvp.BasePresenter
+import kt.utils.PreferencesHelper
+import kt.utils.io
+import kt.utils.unsubsribe
 import org.json.JSONObject
 import rx.Subscriber
 import rx.Subscription

@@ -1,7 +1,7 @@
-package kot.injection
+package kt.injection
 
 import dagger.Component
-import kot.MainActivity
+import kt.MainActivity
 import javax.inject.Singleton
 
 /**

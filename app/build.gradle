@@ -21,9 +21,6 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
-    android {
-        compileOptions.incremental = false
-    }
 }
 
 kapt {

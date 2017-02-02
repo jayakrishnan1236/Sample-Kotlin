@@ -1,4 +1,4 @@
-package kot.utils;
+package kt.utils;
 
 import android.content.SharedPreferences
 import javax.inject.Inject

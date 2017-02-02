@@ -1,4 +1,4 @@
-package kot.utils
+package kt.utils
 
 import rx.Observable
 import rx.Subscription

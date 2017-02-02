@@ -1,4 +1,4 @@
-package kot.injection
+package kt.injection
 
 import com.google.gson.JsonObject
 import retrofit2.http.GET

@@ -1,7 +1,7 @@
-package kot
+package com.webappclouds.samplekotlin
 
-import kot.mvp.BaseNetworkMvpView
-import kot.mvp.MvpView
+import kt.mvp.BaseNetworkMvpView
+import kt.mvp.MvpView
 
 /**
  * Created by user on 2/2/2017.
