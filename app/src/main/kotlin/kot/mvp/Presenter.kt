@@ -8,7 +8,7 @@ package kot.mvp
  */
 interface Presenter<Any: MvpView>{
 
-    fun attachView(mvpview: Any)
+    fun attachView(mvpView: Any)
     fun detachView()
     
 }

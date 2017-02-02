@@ -7,8 +7,8 @@ open class BasePresenter<Any: MvpView> : Presenter<Any> {
 
     private var mvpView:Any? = null
 
-    override fun attachView(view: Any) {
-        this.mvpView = view
+    override fun attachView(mvpView: Any) {
+        this.mvpView = mvpView
     }
 
     override fun detachView() {
