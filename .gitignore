@@ -6,4 +6,4 @@
 /build
 /captures
 .externalNativeBuild
-/app/src/main/kotlin/kot/constants
+/app/src/main/kotlin/kot/constants/Globals.kt 
