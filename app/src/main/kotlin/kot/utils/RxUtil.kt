@@ -1,9 +1,9 @@
 package kot.utils
 
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import rx.Observable
 import rx.Subscription
+import rx.android.schedulers.AndroidSchedulers
+import rx.schedulers.Schedulers
 
 /**
  * Created by user on 2/2/2017.
@@ -15,7 +15,7 @@ fun unsubsribe(subscription: Subscription?) {
     }
 }
 
-fun io(obs: Observable<Any>){
-    obs.observeOn(AndroidSchedulers.mainThread())
+fun <T> io(obs: Observable<T>) : Observable<T> {
+    return obs.observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.newThread())
 }

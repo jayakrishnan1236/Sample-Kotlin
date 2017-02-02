@@ -24,7 +24,7 @@ class MainApplication: Application() {
     override fun onCreate() {
         super.onCreate();
         appComponent = DaggerAppComponent.builder()
-                .appModule(AppModule("", this))
+                .appModule(AppModule("http://www.google.com/", this))
                 .build()
     }
 

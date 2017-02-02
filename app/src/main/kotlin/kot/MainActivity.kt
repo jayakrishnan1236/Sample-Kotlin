@@ -8,14 +8,14 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity(), MainMvpView {
 
     @Inject
-    lateinit var presenter: MainPresenter
+    lateinit var presenter: MainPresenter /*startActivityResult -> setResult(intent.(int String)) finish -> onActivitResult intent -> int string*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         MainApplication.appComponent.inject(this)
-
         presenter.attachView(this)
+
         presenter.loadItems()
     }
 
@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity(), MainMvpView {
 
     override fun showProgress(show: Boolean) {
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        presenter.detachView()
     }
 }
